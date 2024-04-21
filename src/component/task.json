@@ -1,0 +1,17 @@
+[
+    {
+        "title": "hello",
+        "meassage": "lorem50",
+        "cat": "most-important"
+    },
+    {
+        "title": "hhhhhhhhhello",
+        "meassage": "lorem50",
+        "cat": "important"
+    },
+    {
+        "title": "hhhhhhhhhello",
+        "meassage": "lorem50",
+        "cat": "optional"
+    }
+]

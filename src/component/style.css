@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --first-color:  #3498db;
+    --second-color :  #85c1e9;
+    --desing-font: "Sriracha";
+    --optional: #f0f8ff;
+}
+
+
+/* =============== HEADER STARTS ====================== */
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--first-color);
+    padding: .8rem 3rem;
+    display: inline-block;
+
+    & .logo {
+
+        & h1 {
+            text-align: center;
+            font-family: var(--desing-font);
+            font-size: 3.6rem;
+        }
+    }
+
+}
+
+/* =============== HEADER END ====================== */
+
+/* =============== ADD STARTS ====================== */
+
+.hero-section {
+    padding-left: 5rem;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.sec {
+    width: 40%;
+    height: 80vh;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1.2rem;
+    position: relative;
+
+
+    & h1 {
+        position: sticky;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 100%;
+        background-color: var(--second-color);
+        height: 6rem;
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+        border-bottom-right-radius: .6rem;
+        border-bottom-left-radius: .6rem;
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 2.4rem;
+        font-family: var(--desing-font);
+    }
+}
+
+.add {
+    width: 50%;
+    height: 90vh;
+    float: right;
+    background-color: var(--optional);
+
+    & h1 {
+        width: 100%;
+        height: 10%;
+        display: grid;
+        place-content: center;
+        font-family: var(--desing-font);
+        font-size: 4rem;
+    }
+
+    & form {
+        height: 90%;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        & input[type=text],
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.6rem;
+            font-family: serif;
+            border-radius: 1.2rem;
+            outline: none;
+            border: 1px solid black;
+        }
+
+        & select {
+            padding: 1rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-family: serif;
+            border-radius: 1.2rem;
+            outline: none;
+        }
+
+        & input[type=submit] {
+            align-self: center;
+            width: 50%;
+            height: 4rem;
+            border-radius: 2rem;
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            border: 0;
+            background-color: var(--first-color);
+            transition: all .3s;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        & input[type=submit]:hover{
+            box-shadow: 0px 15px 20px var(--second-color);
+            transform: translateY(-7px);
+            color: white;
+        }
+    }
+}
+
+.cardcontain {
+    padding-inline: 2rem;
+}
+
+.card {
+    cursor:grab;
+    width: 100%;
+    min-height: 7rem;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin-block: 2rem;
+    position: relative;
+
+    & h6 {
+        width: 100%;
+        height: fit-content;
+        font-size: 2rem;
+        padding-left: 1rem;
+        text-decoration: underline;
+        overflow: hidden;
+        text-wrap: nowrap;
+
+    }
+
+    & p {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 1.5rem;
+        text-align: justify;
+        font-weight: 600;
+    }
+
+    & button {
+        border: 0;
+        background-color: transparent;
+        font-size: 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
