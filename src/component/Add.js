@@ -70,8 +70,8 @@ const Add = () => {
                     })
                 }
                 }>
-                    <input type="text" id='title' placeholder='Title' />
-                    <textarea name="" id="mess" cols="30" rows="10" placeholder='Message' ></textarea>
+                    <input type="text" id='title' placeholder='Title' required />
+                    <textarea name="" id="mess" cols="30" rows="10" placeholder='Message' required></textarea>
                     <select name="" id="opt">
                         <option value="most-important">Most Important</option>
                         <option value="important">Important</option>
